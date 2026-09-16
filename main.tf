@@ -5,7 +5,7 @@ resource "aws_instance" "webserver" {
   subnet_id              = data.aws_ssm_parameter.customVPCParameters["subnet1_id"].value
 
   tags = {
-    Name = "learn-terraform"
+    Name = "terraform-ssm-consume-project"
   }
 }
 
