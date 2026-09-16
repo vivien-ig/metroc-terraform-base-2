@@ -9,10 +9,5 @@ resource "aws_instance" "webserver" {
   }
 }
 
-resource "aws_kms_key" "s3Key" {
-  description             = "S3 KMS Key"
-  enable_key_rotation     = true
-  deletion_window_in_days = 7
-}
 
 
